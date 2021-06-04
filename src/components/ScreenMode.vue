@@ -19,8 +19,7 @@ export default Vue.extend<any, any, any, any>({
 
   methods: {
     switchDisplay() {
-      //this.$emit('switchDisplay')
-      console.log(document.getElementsByClassName('stylesheet'))
+      this.$emit('switchDisplay')
     },
   },
 });
