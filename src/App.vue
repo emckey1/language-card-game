@@ -23,5 +23,3 @@ export default Vue.extend({
   },
 });
 </script>
-
-<style scoped class="stylesheet" src='@/assets/style/light.css'></style>
