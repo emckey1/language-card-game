@@ -1,6 +1,6 @@
 <template>
     <div class='button'>
-        <button class="button startButton">{{ button }}</button>
+        <button id="startButton" @click="clearScreen()" class="button">{{ button }}</button>
     </div>
 </template>
 
@@ -10,6 +10,12 @@ import Vue from 'vue';
 export default Vue.extend({
     name: 'Button',
     props: ['button'],
+
+    methods: {
+        clearScreen() {
+            document.getElementById("startButton")?.remove();
+        },
+    },
 });
 </script>
 
@@ -27,13 +33,13 @@ export default Vue.extend({
     cursor: pointer;
 }
 
-.startButton {
+#startButton {
     background-color: white;
     color: black;
     border: 3px solid green;
 }
 
-.startButton:hover {
+#startButton:hover {
     background-color: green;
     color: white;
 }

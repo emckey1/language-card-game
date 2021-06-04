@@ -7,7 +7,6 @@
 
 <script lang="ts">
 import Vue from "vue";
-import App from "../App.vue";
 
 export default Vue.extend<any, any, any, any>({
 
